@@ -1,8 +1,8 @@
 === StorageQloud for WordPress ===
-Contributors: greenqloud
+Contributors: greenqloud, greenqloud.com
 Tags: scale, media, auto, uploads, greenqloud, storage cloud, storageqloud, cloud, amazon, s3, mirror, admin, green
 Requires at least: 2.3
-Tested up to: 3.3.1
+Tested up to: 3.4.2
 Stable tag: trunk
 
 Mirrors media uploads on GreenQloud's StorageQloud for storage and delivery. Backed by 100% renewable energy, StorageQloud auto scales on load.

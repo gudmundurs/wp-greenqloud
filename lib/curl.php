@@ -4,9 +4,13 @@ This is a clone of the PEAR HTTP/Request class object. It uses libcurl to do the
 Should also work with the HTTPS protocol
 
 Important: Not every method has been ported, just the ones that were needed.
+
+$Revision: 66280 $
+$Date: 2008-09-25 15:28:23 +0000 (Thu, 25 Sep 2008) $
+$URL: https://photo-album.googlecode.com/svn/trunk/tantan-flickr/lib/curl.php $
 */
 
-class StorageQloudHTTPRequestCurl {
+class TanTanHTTPRequestCurl {
     var $curl;
     var $postData;
     var $cookies;
@@ -15,7 +19,7 @@ class StorageQloudHTTPRequestCurl {
     var $headers;
     var $url;
     
-    function StorageQloudHTTPRequestCurl($url = '', $params = array()) {
+    function TanTanHTTPRequestCurl($url = '', $params = array()) {
         $this->curl = curl_init();
         $this->postData = array();
         $this->cookies = array();

@@ -1,14 +1,14 @@
 
-function storageqloud_insertImage(imgURL, title) {
+function s3_insertImage(imgURL, title) {
 	if (!title) title = '';
-    return storageqloud_insert('<img src="'+imgURL+'" class="storageqloud_img" border="0" alt="'+title+'" /> ');
+    return s3_insert('<img src="'+imgURL+'" class="s3-img" border="0" alt="'+title+'" /> ');
 }
 
-function storageqloud_insertLink(label, url) {
+function s3_insertLink(label, url) {
     var useBittorrent = document.getElementById('useBittorrent').checked
-    return storageqloud_insert('<a href="'+url+(useBittorrent ? '?torrent' : '')+'" class="storageqloud-link'+(useBittorrent ? ' torrent' : '')+'">' + label + '</a> ');
+    return s3_insert('<a href="'+url+(useBittorrent ? '?torrent' : '')+'" class="s3-link'+(useBittorrent ? ' torrent' : '')+'">' + label + '</a> ');
 }
-function storageqloud_insert(h) {
+function s3_insert(h) {
     var win = window.dialogArguments || opener || parent || top;
 	
 	if (typeof win.send_to_editor == 'function') {
@@ -25,7 +25,7 @@ function storageqloud_insert(h) {
 
 	return false;
 }
-function storageqloud_toggleUpload() {
+function s3_toggleUpload() {
 	document.getElementById('create-form').style.display='none';
 	
 	var div = document.getElementById('upload-form');
@@ -36,7 +36,7 @@ function storageqloud_toggleUpload() {
 	}
 	return false;
 }
-function storageqloud_toggleCreateFolder() {
+function s3_toggleCreateFolder() {
 	document.getElementById('upload-form').style.display='none';
 	
 	var div = document.getElementById('create-form');
