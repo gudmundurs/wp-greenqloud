@@ -5,7 +5,7 @@ Plugin URI: http://www.greenqloud.com
 Description: Allows you to retrieve and delete objects stored in GreenQloud Storage and post them in WordPress.
 Author: Joe Tan, GreenQloud, Gudmundur Jonsson
 Version: 0.4
-Author URI: http://greenqloud.com
+Author URI: http://www.greenqloud.com
 
 Copyright (C) 2008 Joe Tan, 
 Copyright (C) 2012, Gudmundur Jonsson
